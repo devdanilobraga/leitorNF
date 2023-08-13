@@ -1,0 +1,87 @@
+/* Reset de estilos básicos */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color:#0B4619;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para o logotipo da empresa */
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilos para o campo de entrada e botão */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a seção de leitura do código de barras */
+#scanner {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#historico {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#historicoList {
+    list-style: none;
+    padding: 0;
+}
+
+#historicoList li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    text-align: left;
+}
+
+#mensagemAviso {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}

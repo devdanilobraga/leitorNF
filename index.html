@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leitor D0 Logistcs</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://static.wixstatic.com/media/9737aa_3f03bfd6e13049df9bc5393d08d7d044~mv2.png/v1/fill/w_88,h_58,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/D0Branco.png" alt="Logo da Empresa">
+    </header>
+    <main>
+        <div id="mensagemAviso"></div>
+        <input type="text" id="codigoBarrasInput" placeholder="Digite o código de barras">
+        <button id="pesquisarManual">Pesquisar</button>
+        <button id="iniciarLeitura">Iniciar Leitura</button>
+        <div id="scanner"></div>
+        <div id="historico">
+            <h2>Histórico de Scans</h2>
+            <ul id="historicoList"></ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
