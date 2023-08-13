@@ -1,6 +1,6 @@
 // Função para processar o código de barras e exibir no histórico
 function processarMiniDANFE(code) {
-    const cnpjEmitente = code.substr(6, 8);
+    const cnpjEmitente = code.substr(6, 14);
     const dataEmissaoRaw = code.substr(2, 6);  // Extrai os caracteres da data (aammdd)
     const ano = "20" + dataEmissaoRaw.substr(0, 2); // Pega os últimos dois dígitos do ano e acrescenta "20"
     const mes = dataEmissaoRaw.substr(2, 2); // Pega o mês
@@ -25,7 +25,7 @@ function processarMiniDANFE(code) {
     const historicoList = document.getElementById("historicoList");
     const historicoItem = document.createElement("li");
     historicoItem.innerHTML = `
-        <strong>CNPJ Emitente:</strong> ${cnpjEmitente}/<br>
+        <strong>CNPJ Emitente:</strong> ${cnpjEmitente}<br>
         <strong>Data Emissão:</strong> ${dataEmissaoFormatada}<br>
         <strong>Modelo:</strong> ${modelo}<br>
         <strong>Série:</strong> ${serie}<br>
